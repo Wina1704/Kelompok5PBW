@@ -8,6 +8,7 @@
 2. **Wina Windari Kusdarniza** (NIM: 4522210017)
 3. **Daiva Baskoro Upangga** (NIM: 4522210045)
 
+## ✨ Use case
 ![image](https://github.com/user-attachments/assets/926abca0-72e5-44c7-9a31-ea81de7b88c2)
 ## ✨ Fitur Utama
 Berikut adalah fitur-fitur yang terdapat dalam sistem ini.
