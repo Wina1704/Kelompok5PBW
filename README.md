@@ -10,8 +10,6 @@
 
 ## ✨ Use case
 ![image](https://github.com/user-attachments/assets/926abca0-72e5-44c7-9a31-ea81de7b88c2)
-## ✨ Fitur Utama
-Berikut adalah fitur-fitur yang terdapat dalam sistem ini.
 
 ### ➢ Membuat Akun dan Grup
 **Aktor**: `Users`
@@ -36,39 +34,57 @@ Berikut adalah fitur-fitur yang terdapat dalam sistem ini.
 
 ---
 
+## ✨ ERD
 ![image (1)](https://github.com/user-attachments/assets/2a73ef91-1f60-4f6e-90d6-fbf51981be8d)
-Penjelasan:
-Entitas Utama:
-• Users: Mewakili pengguna sistem. Setiap pengguna memiliki identitas 
-unik (user_id), nama, alamat email, kata sandi, dan tanggal pembuatan 
-akun. 
-• Groups: Mewakili kelompok atau tim dalam sistem. Setiap grup 
-memiliki identitas unik (group_id), nama, deskripsi, dan tanggal 
-pembuatan. 
-• Tasks: Mewakili tugas yang diberikan kepada pengguna. Setiap tugas 
-memiliki identitas unik (task_id), nama, deskripsi, tanggal jatuh tempo, 
-dan status.
 
-Hubungan Antar Entitas:
-• Users dan Groups (hubungan many-to-many): Satu pengguna dapat 
-menjadi anggota dari banyak grup, dan satu grup dapat memiliki 
-banyak anggota. Hubungan ini diimplementasikan melalui tabel 
-perantara Group_Members. 
-• Users dan Tasks (hubungan many-to-many): Satu pengguna dapat 
-ditugaskan pada banyak tugas, dan satu tugas dapat ditugaskan kepada 
-banyak pengguna. Hubungan ini diimplementasikan melalui tabel 
-perantara Task_Assignments. 
-• Groups dan Tasks (hubungan one-to-many): Satu grup dapat 
-memiliki banyak tugas, tetapi satu tugas hanya dapat dimiliki oleh satu 
-grup.
 
-Interpretasi Umum:
-• Bergabung dalam grup: Pengguna dapat bergabung dengan berbagai 
-grup yang relevan dengan minat atau proyek mereka. 
-• Menerima tugas: Pengguna dapat ditugaskan pada berbagai tugas 
-yang berasal dari grup-grup yang mereka ikuti. 
-• Melacak kemajuan tugas: Pengguna dapat melihat status tugas yang 
-diberikan kepada mereka dan melacak perkembangannya. 
-• Kolaborasi: Pengguna dapat bekerja sama dengan anggota grup 
-lainnya untuk menyelesaikan tugas-tugas yang diberikan
+## 🗃️ Entitas Utama
+### 1. **Users**
+Mewakili pengguna sistem. Setiap pengguna memiliki atribut berikut:
+- **user_id**: Identitas unik pengguna.
+- **nama**: Nama lengkap pengguna.
+- **alamat email**: Email pengguna untuk autentikasi.
+- **kata sandi**: Kata sandi untuk login.
+- **tanggal pembuatan akun**: Tanggal akun dibuat.
+
+### 2. **Groups**
+Mewakili kelompok atau tim dalam sistem. Setiap grup memiliki atribut berikut:
+- **group_id**: Identitas unik grup.
+- **nama**: Nama grup.
+- **deskripsi**: Deskripsi singkat mengenai grup.
+- **tanggal pembuatan**: Tanggal grup dibuat.
+
+### 3. **Tasks**
+Mewakili tugas yang diberikan kepada pengguna. Setiap tugas memiliki atribut berikut:
+- **task_id**: Identitas unik tugas.
+- **nama**: Nama tugas.
+- **deskripsi**: Deskripsi tugas.
+- **tanggal jatuh tempo**: Deadline tugas.
+- **status**: Status tugas (selesai/belum selesai).
+
+---
+
+## 🔗 Hubungan Antar Entitas
+1. **Users dan Groups** (hubungan many-to-many)
+   - Satu pengguna dapat menjadi anggota dari banyak grup, dan satu grup dapat memiliki banyak anggota.
+   - Hubungan ini diimplementasikan melalui tabel perantara `Group_Members`.
+
+2. **Users dan Tasks** (hubungan many-to-many)
+   - Satu pengguna dapat ditugaskan pada banyak tugas, dan satu tugas dapat ditugaskan kepada banyak pengguna.
+   - Hubungan ini diimplementasikan melalui tabel perantara `Task_Assignments`.
+
+3. **Groups dan Tasks** (hubungan one-to-many)
+   - Satu grup dapat memiliki banyak tugas, tetapi satu tugas hanya dapat dimiliki oleh satu grup.
+
+---
+
+## 🌐 Interpretasi Umum
+- **Bergabung dalam grup**: Pengguna dapat bergabung dengan berbagai grup yang relevan dengan minat atau proyek mereka.
+- **Menerima tugas**: Pengguna dapat ditugaskan pada berbagai tugas yang berasal dari grup-grup yang mereka ikuti.
+- **Melacak kemajuan tugas**: Pengguna dapat melihat status tugas yang diberikan kepada mereka dan melacak perkembangannya.
+- **Kolaborasi**: Pengguna dapat bekerja sama dengan anggota grup lainnya untuk menyelesaikan tugas-tugas yang diberikan.
+
+---
+
+##  Instalasi
 
