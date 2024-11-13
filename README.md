@@ -87,4 +87,5 @@ Mewakili tugas yang diberikan kepada pengguna. Setiap tugas memiliki atribut ber
 ---
 
 ##  Instalasi
-`https://github.com/Wina1704/Kelompok5PBW.git`
+```bash
+git clone https://github.com/Wina1704/Kelompok5PBW.git
