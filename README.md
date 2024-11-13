@@ -1,6 +1,6 @@
-# 📋 Project Web Application
+# 📋 Manajemen Tugas Kelompok
 
-## 📚 Mata Kuliah
+## 📚 Kelompok 5
 **Pemrograman Berbasis Web**
 
 ## 👥 Anggota Kelompok
@@ -87,4 +87,4 @@ Mewakili tugas yang diberikan kepada pengguna. Setiap tugas memiliki atribut ber
 ---
 
 ##  Instalasi
-
+`https://github.com/Wina1704/Kelompok5PBW.git`
