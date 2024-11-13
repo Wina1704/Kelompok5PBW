@@ -34,3 +34,40 @@ Berikut adalah fitur-fitur yang terdapat dalam sistem ini.
 - **Menandai Tugas Belum Selesai**: Users dapat menandai tugas yang belum selesai.
 
 ---
+
+![image (1)](https://github.com/user-attachments/assets/2a73ef91-1f60-4f6e-90d6-fbf51981be8d)
+Penjelasan:
+Entitas Utama:
+• Users: Mewakili pengguna sistem. Setiap pengguna memiliki identitas 
+unik (user_id), nama, alamat email, kata sandi, dan tanggal pembuatan 
+akun. 
+• Groups: Mewakili kelompok atau tim dalam sistem. Setiap grup 
+memiliki identitas unik (group_id), nama, deskripsi, dan tanggal 
+pembuatan. 
+• Tasks: Mewakili tugas yang diberikan kepada pengguna. Setiap tugas 
+memiliki identitas unik (task_id), nama, deskripsi, tanggal jatuh tempo, 
+dan status.
+
+Hubungan Antar Entitas:
+• Users dan Groups (hubungan many-to-many): Satu pengguna dapat 
+menjadi anggota dari banyak grup, dan satu grup dapat memiliki 
+banyak anggota. Hubungan ini diimplementasikan melalui tabel 
+perantara Group_Members. 
+• Users dan Tasks (hubungan many-to-many): Satu pengguna dapat 
+ditugaskan pada banyak tugas, dan satu tugas dapat ditugaskan kepada 
+banyak pengguna. Hubungan ini diimplementasikan melalui tabel 
+perantara Task_Assignments. 
+• Groups dan Tasks (hubungan one-to-many): Satu grup dapat 
+memiliki banyak tugas, tetapi satu tugas hanya dapat dimiliki oleh satu 
+grup.
+
+Interpretasi Umum:
+• Bergabung dalam grup: Pengguna dapat bergabung dengan berbagai 
+grup yang relevan dengan minat atau proyek mereka. 
+• Menerima tugas: Pengguna dapat ditugaskan pada berbagai tugas 
+yang berasal dari grup-grup yang mereka ikuti. 
+• Melacak kemajuan tugas: Pengguna dapat melihat status tugas yang 
+diberikan kepada mereka dan melacak perkembangannya. 
+• Kolaborasi: Pengguna dapat bekerja sama dengan anggota grup 
+lainnya untuk menyelesaikan tugas-tugas yang diberikan
+
